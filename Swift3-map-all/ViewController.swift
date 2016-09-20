@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        loadMap()
+            }
+    
+    func loadMap(){
         let latDelta:CLLocationDegrees = 0.05
         let lonDelta:CLLocationDegrees = 0.05
         
@@ -35,6 +38,7 @@ class ViewController: UIViewController {
         anota.coordinate = location
         
         map.addAnnotation(anota)
+
     }
 
     override func didReceiveMemoryWarning() {
