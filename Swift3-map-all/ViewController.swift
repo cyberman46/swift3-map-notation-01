@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         map.setRegion(regin, animated: true)
         
-        let anota = MKPointAnnotation()
+        let anota = MKPointAnnotation() // add anotation on map
         anota.title = "Hello"
         anota.subtitle = "It, anotation here"
         
